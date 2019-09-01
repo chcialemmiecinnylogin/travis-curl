@@ -1,0 +1,2 @@
+curl -F 'projectName=TravisIntegration' -F 'stageName=Stage' -F 'file=@build/libs/traviscurl-0.0.1-SNAPSHOT.jar' -H "Authorization: token $token" http://34.65.81.82:8080/student/upload/bin;
+curl -X POST -d 'projectName=TravisIntegration' -d 'stageName=Stage' -H "Authorization: token $token" http://34.65.81.82:8080/student/stage/run;

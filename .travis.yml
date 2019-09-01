@@ -3,3 +3,6 @@ dist: trusty
 
 script:
   - ./gradlew bootJar
+
+after_script:
+  - ./deploy.sh
